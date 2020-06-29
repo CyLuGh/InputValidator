@@ -5,7 +5,13 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputValidator", "InputValidator\InputValidator.csproj", "{0FC86C7A-F10F-420B-94A7-3A99F23813BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputValidator.Tests", "InputValidator.Tests\InputValidator.Tests.csproj", "{4DF098BC-20F0-4433-908B-054DA4ABA750}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputValidator.Tests", "InputValidator.Tests\InputValidator.Tests.csproj", "{4DF098BC-20F0-4433-908B-054DA4ABA750}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputValidator.UI", "InputValidator.UI\InputValidator.UI.csproj", "{F7692971-DF80-45C2-BE61-5AF1B947A711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputValidator.Samples.WPF", "InputValidator.Samples.WPF\InputValidator.Samples.WPF.csproj", "{49F8E542-D6C3-4234-B7EF-A7C3CFFB88CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{451B6334-E23F-4A53-BDE0-7B20EE5F6498}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,20 @@ Global
 		{4DF098BC-20F0-4433-908B-054DA4ABA750}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DF098BC-20F0-4433-908B-054DA4ABA750}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DF098BC-20F0-4433-908B-054DA4ABA750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7692971-DF80-45C2-BE61-5AF1B947A711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7692971-DF80-45C2-BE61-5AF1B947A711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7692971-DF80-45C2-BE61-5AF1B947A711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7692971-DF80-45C2-BE61-5AF1B947A711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F8E542-D6C3-4234-B7EF-A7C3CFFB88CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F8E542-D6C3-4234-B7EF-A7C3CFFB88CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F8E542-D6C3-4234-B7EF-A7C3CFFB88CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F8E542-D6C3-4234-B7EF-A7C3CFFB88CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49F8E542-D6C3-4234-B7EF-A7C3CFFB88CA} = {451B6334-E23F-4A53-BDE0-7B20EE5F6498}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E57E78C0-ABD0-41D1-9ED8-1E9BC8B8B0FB}

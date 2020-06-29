@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>InputValidator</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Demortier Jeremy</Authors>
+    <Company></Company>
+    <PackageDescription></PackageDescription>
+    <RepositoryUrl>https://github.com/CyLuGh/InputValidator</RepositoryUrl>
+    <license>MIT</license>
   </PropertyGroup>
-
 </Project>

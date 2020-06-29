@@ -18,6 +18,9 @@ namespace InputValidator
         public List<Rule<IEnumerable<T>>> GlobalRuleSet { get; }
             = new List<Rule<IEnumerable<T>>>();
 
+        /// <summary>
+        /// Func used to convert parsed line to targeted type.
+        /// </summary>
         public Func<string[], T> Converter { get; set; }
 
         public char Separator { get; set; } = ';';
@@ -28,14 +31,21 @@ namespace InputValidator
 
         public Results<T> ParseFile(string filePath)
         {
-            var lines = File.ReadAllLines(filePath);
+            try
+            {
+                var lines = File.ReadAllLines(filePath);
 
-            if (SkipFirstLine)
-                lines = lines.Skip(1).ToArray();
-            if (SkipLastLine)
-                lines = lines.SkipLast(1).ToArray();
+                if (SkipFirstLine)
+                    lines = lines.Skip(1).ToArray();
+                if (SkipLastLine)
+                    lines = lines.SkipLast(1).ToArray();
 
-            return Parse(lines);
+                return Parse(lines);
+            }
+            catch (Exception exc)
+            {
+                return new Results<T>(new List<T>(), new[] { new Warning($"An exception occurred while reading the file. Exception: {exc.Message}", Extent.Configuration) }.ToList());
+            }
         }
 
         public Results<T> Parse(string[] lines)
